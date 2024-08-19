@@ -66,7 +66,7 @@ demigras migration create [option]
 本コマンドの例を下記に示す。
 ``` bash
 # 「V19700101000000-CreateSampleTbl.u.sql」のファイル名でマイグレーションファイルを生成するコマンド
-demigras migration create --version "V19700101000000" --description "CreateSampleTbl"
+demigras migration create --version="V19700101000000" --description="CreateSampleTbl"
 ```
 
 
@@ -92,7 +92,7 @@ demigras rollback create [version] [option]
 本コマンドの例を下記に示す。
 ``` bash
 # 「V19700101000000-CreateSampleTbl.u.sql」のマイグレーションに対応するロールバックを生成するコマンド
-demigras rollback create V19700101000000 --remarks "DropSampleTbl"
+demigras rollback create V19700101000000 --remarks="DropSampleTbl"
 ```
 
 
@@ -113,7 +113,7 @@ demigras seed create [option]
 本コマンドの例を下記に示す。
 ``` bash
 # 「S-SampleSeed-F2ZF5UjoeNlZyzmv.sql」のファイル名でシードファイルを生成するコマンド
-demigras seed create --title "SampleSeed" --id "F2ZF5UjoeNlZyzmv"
+demigras seed create --title="SampleSeed" --id="F2ZF5UjoeNlZyzmv"
 ```
 
 
@@ -133,7 +133,7 @@ demigras migration execute [option]
 本コマンドの例を下記に示す。
 ``` bash
 # 最大5つの未実行のマイグレーションを実行するコマンド
-demigras migration execute --steps 5
+demigras migration execute --steps=5
 ```
 
 
@@ -153,7 +153,7 @@ demigras rollback execute [option]
 本コマンドの例を下記に示す。
 ``` bash
 # 最大2つの実行済みのマイグレーションをロールバックするコマンド
-demigras rollback execute --steps 2
+demigras rollback execute --steps=2
 ```
 
 
@@ -168,7 +168,7 @@ demigras seed execute [option]
 本コマンドは、共通オプションに加えて、以下のオプションを指定できる。
 |オプション名|値|備考|
 |:--|:--|:--|
-|--all|値を指定は不要|実行状況に関わらず、すべてのシードファイルを実行する。|
+|--all|値の指定は不要|実行状況に関わらず、すべてのシードファイルを実行する。|
 |--file|実行するシードファイル名を指定する。||
 
 #### 例
@@ -181,7 +181,7 @@ demigras seed execute
 demigras seed execute --all
 
 # 特定のシードファイルのみ実行
-demigras seed execute --file "S-ExampleSeed-OgEO1PbocPXV84Li.sql"
+demigras seed execute --file="S-ExampleSeed-OgEO1PbocPXV84Li.sql"
 ```
 
 
@@ -307,7 +307,7 @@ S-Title-OgEO1PbocPXV84Li.sql
 #### 例
 設定ファイルを実行時に指定する場合の、コマンド例を下記に示す。
 ``` bash
-migration someCommand --config ".migration/config"
+migration someCommand --config=".migration/config"
 ```
 
 
