@@ -7,7 +7,7 @@ require_once(realpath(__DIR__.'/../resource/constants.php'));
 require_once(realpath(__DIR__.'/../vendor/autoload.php'));
 
 $app = new Application('Demigras', DEMIGRAS_VERSION);
-
+$app->setVersion(DEMIGRAS_VERSION);
 
 // コマンド追加
 $app->addCommands([
