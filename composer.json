@@ -1,0 +1,20 @@
+{
+    "name": "sumi-ug1999/demigras",
+    "description": "This libraries is provide powerfully support to development the database. (migration, etc.)",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "SAkiyama5963\\Demigras\\": "src/"
+        }
+    },
+    "license": "MIT License",
+    "homepage": "https://chicago-ts.com/",
+    "authors": [
+        {
+            "name": "Sumi",
+            "homepage": "https://sumiug.com/"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
