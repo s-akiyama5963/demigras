@@ -16,5 +16,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "symfony/console": "^7.1",
+        "ginq/ginq": "^0.2.4",
+        "vlucas/phpdotenv": "^5.6",
+        "league/flysystem": "^3.28"
+    }
 }
